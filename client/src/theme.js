@@ -136,4 +136,8 @@ export const themeSettings = (mode) => {
             },
         },
     };
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> origin/main

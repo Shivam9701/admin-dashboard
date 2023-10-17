@@ -45,4 +45,7 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
     }).catch((err) => {
         console.log(err);
     });
+<<<<<<< HEAD
     
+=======
+>>>>>>> origin/main

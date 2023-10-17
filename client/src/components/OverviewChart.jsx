@@ -87,7 +87,12 @@ const OverviewChart = ({ isDashboard = false, view }) => {
         },
         tooltip: {
           container: {
+<<<<<<< HEAD
             color: theme.palette.primary.main,
+=======
+
+            color: theme.palette.primary[200],
+>>>>>>> origin/main
           }
         }
       }}
