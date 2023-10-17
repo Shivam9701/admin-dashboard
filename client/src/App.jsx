@@ -12,22 +12,14 @@ import Transactions from './scenes/Transactions.jsx';
 import Geography from './scenes/Geography.jsx';
 import Overview from './scenes/Overview.jsx';
 import Daily from './scenes/Daily.jsx';
-<<<<<<< HEAD
 import Monthly from './scenes/Monthly.jsx';
 import Breakdown from './scenes/Breakdown.jsx';
-=======
->>>>>>> origin/main
 
 /**
  * Renders the main App component.
  * @returns {JSX.Element} The App component.
  */
 const App = () => {
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> origin/main
   const mode = useSelector(state => state.global.mode);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
 
@@ -48,14 +40,10 @@ const App = () => {
               <Route path="/transactions" element={<Transactions />} />
               <Route path="/geography" element={<Geography />} />
               <Route path="/overview" element={<Overview />} />
-<<<<<<< HEAD
-              <Route path="/daily" element={<Daily />} />
-              <Route path="/monthly" element={<Monthly />} />
-              <Route path="/breakdown" element={<Breakdown />} />
-=======
               <Route path = "/daily" element = {<Daily />} />
+              <Route path = "/monthly" element = {<Monthly />} />
+              <Route path = "/breakdown" element = {<Breakdown />} />
 
->>>>>>> origin/main
             </Route>
 
           </Routes>
