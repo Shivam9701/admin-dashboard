@@ -113,13 +113,13 @@ const Sidebar = ({ user, drawerWidth, isSidebarOpen, setIsSidebarOpen, isNonMobi
 
                                 </Box>
 
-                                {isNonMobile &&
 
-                                    (<IconButton
-                                        onClick={() => { setIsSidebarOpen(!isSidebarOpen) }}>
-                                        <ChevronLeft />
-                                    </IconButton>)
-                                }
+
+                                <IconButton
+                                    onClick={() => { setIsSidebarOpen(!isSidebarOpen) }}>
+                                    <ChevronLeft />
+                                </IconButton>
+
 
                             </FlexBetween>
 
@@ -189,7 +189,7 @@ const Sidebar = ({ user, drawerWidth, isSidebarOpen, setIsSidebarOpen, isNonMobi
                                 </Typography>
 
                             </Box>
-                            
+
                             <SettingsOutlined sx={{ color: theme.palette.secondary[300], fontSize: "25px" }} />
 
                         </FlexBetween>

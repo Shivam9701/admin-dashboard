@@ -82,17 +82,12 @@ const OverviewChart = ({ isDashboard = false, view }) => {
         },
         legends: {
           text: {
-            fill: theme.palette.secondary[900]
+            fill: theme.palette.secondary[200]
           }
         },
         tooltip: {
           container: {
-<<<<<<< HEAD
             color: theme.palette.primary.main,
-=======
-
-            color: theme.palette.primary[200],
->>>>>>> origin/main
           }
         }
       }}
@@ -107,11 +102,11 @@ const OverviewChart = ({ isDashboard = false, view }) => {
         reverse: false
       }}
       curve="catmullRom"
+      enableArea={isDashboard}
       axisTop={null}
       axisRight={null}
       axisBottom={{
         format: (v) => {
-          if (isDashboard) return v;
           return v.slice(0, 3);
         },
         tickSize: 5,
@@ -123,6 +118,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
       }}
       axisLeft={{
         tickSize: 5,
+        tickValues: 5,
         tickPadding: 5,
         tickRotation: 0,
         legend: isDashboard ? "" : `Total ${view === 'sales' ? 'Sales' : 'Units'}`,

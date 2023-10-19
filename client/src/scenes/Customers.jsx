@@ -2,6 +2,7 @@ import { useGetCustomersQuery } from "../state/api.js";
 import { Box, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import Header from "../components/Header.jsx";
+import CustomColumnMenu from "../components/CustomColumnMenu.jsx";
 
 
 const Customers = () => {
@@ -32,7 +33,7 @@ const Customers = () => {
 
       {isLoading && <div>Loading...</div>}
 
-      <Box mt="75px" height="75vw" sx={{
+      <Box mt="75px" height="75vh" sx={{
 
         "& .MuiDataGrid-root": {
           border: 'none',
@@ -72,6 +73,9 @@ const Customers = () => {
           getRowId={(row) => row._id}
           rows={data || []}
           columns={columns}
+          slots={{
+            columnMenu : CustomColumnMenu,
+          }}
         />
 
       </Box>

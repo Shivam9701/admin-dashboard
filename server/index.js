@@ -39,13 +39,10 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
     .then(() => {
         console.log('MongoDB connected')
         app.listen(port, async () => {
+      
             console.log(`listening on port ${port}`);
         });
 
     }).catch((err) => {
         console.log(err);
     });
-<<<<<<< HEAD
-    
-=======
->>>>>>> origin/main

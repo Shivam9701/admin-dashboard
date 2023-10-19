@@ -14,7 +14,8 @@ import Overview from './scenes/Overview.jsx';
 import Daily from './scenes/Daily.jsx';
 import Monthly from './scenes/Monthly.jsx';
 import Breakdown from './scenes/Breakdown.jsx';
-
+import Admins from './scenes/Admins.jsx';
+import Performance from './scenes/Performance.jsx';
 /**
  * Renders the main App component.
  * @returns {JSX.Element} The App component.
@@ -40,10 +41,12 @@ const App = () => {
               <Route path="/transactions" element={<Transactions />} />
               <Route path="/geography" element={<Geography />} />
               <Route path="/overview" element={<Overview />} />
-              <Route path = "/daily" element = {<Daily />} />
-              <Route path = "/monthly" element = {<Monthly />} />
-              <Route path = "/breakdown" element = {<Breakdown />} />
-
+              <Route path="/daily" element={<Daily />} />
+              <Route path="/monthly" element={<Monthly />} />
+              <Route path="/breakdown" element={<Breakdown />} />
+              <Route path="/admin" element={<Admins />} />
+              <Route path="/performance" element={<Performance />} />
+            
             </Route>
 
           </Routes>
